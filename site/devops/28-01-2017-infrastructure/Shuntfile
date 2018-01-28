@@ -1,0 +1,10 @@
+project:
+  resources:
+    - salt
+    - javier.salient-lore.devops.pub
+    - javier.salient-lore.devops
+  views:
+    - infrastructure.tf
+    - packer-site.json
+    - setup_env.sh
+    
