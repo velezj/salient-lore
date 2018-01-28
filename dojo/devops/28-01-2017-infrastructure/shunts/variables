@@ -1,0 +1,14 @@
+
+{% set aws_profile = "javier.personal.salient-lore.devops" %}
+{% set aws_region = "us-east-2" %}
+{% set project = "salient-lore-site" %}
+{% set devops_key = "javier.salient-lore.devops" %}
+
+{% set state_s3_bucket = "state.salient-lore" %}
+{% set state_s3_key = project + "/terraform/state/terraform.tfstate" %}
+{% set state_s3_region = aws_region %}
+
+{% set salt_master_instance_type = "t2.micro" %}
+{% set salt_minion_instance_type = "t2.micro" %}
+{% set bastion_instance_type = "t2.micro" %}
+{% set number_of_minions = 1 %}
