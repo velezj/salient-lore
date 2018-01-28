@@ -6,7 +6,7 @@ This quickstart explains how to setup and install the infrastructure needed for 
 
 1. terraform must be installed (https://www.terraform.io/)
 1. packer must be installed (https://www.packer.io)
-1. project-manager must be installed (https://github.com/velezj/project-manager.git, only the project-manager/shunt/shunt/ module is needed)
+1. jplankton.project-manager.shunt must be installed ( pip install jplankton.project-manager.shunt, https://github.com/velezj/project-manager )
 
 ## setup
 
@@ -32,7 +32,7 @@ ssh-keygen -t rsa -b 4096 -f <devops-key-name>
 1. run the project-manager shunt script to materialize the infrastructure code
 ```sh
 cd salient-lore/site/devops/28-01-2017-infrastructure/
-python <project-manger/shunt/shunt/shunt.py> Shuntfile
+jplankton.project-manager.shunt Shuntfile
 ```
 
 You should now have a `materialized_views` folder sibling to the Shuntfile.
@@ -69,5 +69,5 @@ ssh-into-site
 
 1. on site machine, apply salt provisioning
 ```sh
-sudo salt '*' state.highstate
+sudo salt '*' state.apply
 ```
