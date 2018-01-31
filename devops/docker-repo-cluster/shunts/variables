@@ -5,6 +5,7 @@
 {% set devops_key = "javier.salient-lore.devops" %}
 
 {% set state_s3_bucket = "salient-lore" %}
+{% set state_s3_bucket = "javier.state.terraform.33x" %}
 {% set state_s3_key = project + "/state/terraform.tfstate" %}
 {% set state_s3_region = aws_region %}
 
